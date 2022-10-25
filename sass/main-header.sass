@@ -1,0 +1,187 @@
+.header
+ border-bottom: 2px solid $text-color
+ position: relative
+ &::before
+  display: block
+  position: absolute
+  content: ""
+  width: 100vw
+  height: 2px
+  background-color: #000
+  top: 93px
+  z-index: 50
+ &__container
+  display: flex
+  justify-content: space-between
+  width: 1440px
+  padding: 0 50px 0 50px
+  margin: 0 auto
+  flex-wrap: wrap
+ &__block
+  &-info
+   z-index: 3
+   margin-bottom: 130px
+  &-nav
+   display: flex
+   justify-content: left
+   width: 1440px
+   z-index: 3
+   align-items: center
+ &__logo
+  width: 105px
+  height: 48px
+ &__icon
+  margin-top: 33.35px
+  width: 18.33px
+  &:hover
+   transform: scale(1.2)
+  &:active
+   transform: translateY(4px)
+  &s-block
+   padding: 20.77px 640px 58.17px 0
+   display: flex
+   flex-wrap: wrap
+   justify-content: left
+   width: 18.33px
+ &__title
+  font-family: RalewayBold
+  font-weight: 700
+  font-size: 5rem
+  color: $text-color
+  margin: 0
+ &__subtitle
+  font-weight: 600
+  font-family: RalewayLight
+  font-size: 1.0714rem
+  color: $text-color
+  margin: 0
+ &__features
+  margin-top: 29px
+  width: 521px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  &-item
+   width: 240px
+   text-align: left
+   margin-top: 15px
+   font-weight: 600
+   font-family: Raleway
+   font-size: 0.9285rem
+   color: $text-color
+ &__button
+  &-wrapper
+   margin-top: 28px
+ &__video
+  &-block
+   width: 720px
+   height: 702px
+   border-top: 2px solid $text-color
+   position: relative
+   &::after
+    content: url('../img/main-header/after.png')
+    display: block
+    position: absolute
+    top: -7px
+    right: 18px
+    width: 233px
+    height: 28px
+ &__nav
+  width: 516px
+  margin-left: 302px
+  display: flex
+  justify-content: center
+  height: 98px
+  &_mobile
+   display: none
+   justify-content: center
+   align-items: center
+   background-color: rgb(169, 169, 169)
+   height: 50vh
+   width: 100vw
+   position: fixed
+   top: 0
+   left: 0
+   z-index: 200
+  &-link
+   text-decoration: none
+   color: $text-color
+   font-size: 1.0714rem
+   font-family: Raleway
+   font-weight: 700
+   text-transform: uppercase
+   &:hover
+    // background: rgb(115,87,231)
+    // background: linear-gradient(90deg, rgba(115,87,231,1) 0%, rgba(232,87,168,1) 35%, rgba(251,156,84,1) 69%, rgba(252,98,112,1) 100%)
+    transform: scale(1.1)
+    transition: .2s
+   &_mobile
+    text-decoration: none
+    color: $text-color
+    font-size: 1.0714rem
+    font-family: Raleway
+    font-weight: 700
+    text-transform: uppercase
+ &__list
+  display: none
+  justify-content: space-between
+  align-items: center
+  width: 516px
+  list-style-type: none
+  padding-left: 0
+  &_mobile
+   display: flex
+   justify-content: center
+   flex-wrap: wrap
+   background-color: rgba(169, 169, 169, 1)
+   height: 50vh
+   width: 100vw
+   z-index: 200
+   padding-left: 0
+  &-item
+   &:hover
+    // background: rgb(115,87,231)
+    // background: linear-gradient(90deg, rgba(115,87,231,1) 0%, rgba(232,87,168,1) 35%, rgba(251,156,84,1) 69%, rgba(252,98,112,1) 100%)
+    transform: scale(1.1)
+    transition: .2s
+   &_mobile
+    width: 100%
+    height: 12.5vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: rgba(169, 169, 169, 1)
+    border-bottom: 2px solid $text-color
+ &__image
+  position: absolute
+  right: 70px
+  z-index: -1
+  top: 135px
+  &_mobile
+   display: none
+ &__burger
+  display: none
+
+
+
+
+@keyframes menuShowing
+ 0%
+  top: -50%
+ 100%
+  top: 0
+@keyframes menuHiding
+ 0%
+  top: 0
+ 100%
+  top: -50%
+@keyframes menuOverlayShowing
+ 0%
+  opacity: 0
+ 100%
+  opacite: 1
+@keyframes menuOverlayHiding
+ 0%
+  opacity: 1
+ 100%
+  opacity: 0

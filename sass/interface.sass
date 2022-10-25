@@ -1,0 +1,333 @@
+.button
+ background: url(../img/main-header/button-bg.png) left no-repeat
+ background-size: cover
+ border: none
+ width: 182.48px
+ height: 60px
+ position: relative
+ font-weight: 700
+ font-family: Raleway
+ font-size: 1.0714rem
+ color: #fff
+ padding: 0 27px 0 27px
+ transition: .5s
+ &:after
+  position: absolute
+  top: 0
+  right: 0
+  margin-top: 0
+  margin-right: -59.52px
+  width: 57.52px
+  height: 60px
+  background: url(../img/main-header/button-bg.png) right no-repeat
+  background-size: cover
+  content: ''
+  display: block
+  transition: .5s
+  pointer-events: none
+ &:before
+  position: absolute
+  top: 1px
+  right: 0
+  margin-right: -60.52px
+  content: url("../img/main-header/triangle.png")
+  width: 57.52px
+  height: 61px
+  display: block
+  z-index: 10
+  display: flex
+  justify-content: center
+  align-items: center
+  animation: .5s linear returnSpin
+  transform-origin: 50% 50% 0
+  transition: .5s
+  pointer-events: none
+ &-wrapper
+  width: 240px
+  z-index: 20
+ &_hover
+  background: url(../img/main-header/button-bg.png) left no-repeat
+  background-size: cover
+  border: none!important
+  outline: none!important
+  width: 182.48px
+  height: 60px
+  position: relative
+  font-weight: 700
+  font-family: Raleway
+  font-size: 1.0714rem
+  color: #fff
+  padding: 0 27px 0 27px
+  transform: scale(1.1)
+  transition: .5s
+  pointer-events: none
+  &:after
+   position: absolute
+   top: 0
+   right: 0
+   margin-top: 0
+   margin-right: -55.52px
+   width: 57.52px
+   height: 60px
+   background: url(../img/main-header/button-bg.png) right no-repeat
+   background-size: cover
+   border: none!important
+   outline: none!important  
+   content: ''
+   display: block
+   transform: scale(1.1)
+   transition: .5s
+   transform: translateX(4px)
+   pointer-events: none
+  &:before
+   position: absolute
+   top: 0
+   right: 0
+   margin-right: -60.52px
+   content: url("../img/main-header/triangle.png")
+   width: 58.52px
+   height: 60px
+   display: flex
+   justify-content: center
+   align-items: center
+   z-index: 10
+   transform: rotate(-90deg)
+   animation: .5s linear spin
+   transform-origin: 50% 50% 0
+   pointer-events: none
+  &-wrapper
+   width: 256px
+   z-index: 20
+   
+@keyframes spin
+ 0%
+  transform: rotate(0deg)
+ 100%
+  transform: rotate(-90deg)
+@keyframes returnSpin
+ 0%
+  transform: rotate(-90deg)
+ 100%
+  transform: rotate(0deg)
+.slider
+ &__button
+  &-block
+   position: absolute
+   top: 0
+   right: 0
+   width: 120px
+   display: flex
+  &-left
+   width: 60px
+   height: 60px
+   background: url(../img/main-teachers/border-button.png) center no-repeat
+   background-size: 60px 60px
+   display: flex
+   justify-content: center
+   align-items: center
+  &-right
+   width: 60px
+   height: 60px
+   background: url(../img/main-teachers/border-button.png) center no-repeat
+   background-size: 60px 60px
+   display: flex
+   justify-content: center
+   align-items: center
+   &:active
+    transform: scale(1.1)
+    transform: translateX(4px)
+    transition: 0.1s
+.popup
+ &__entrance
+  display: none
+  position: fixed
+  justify-content: center
+  flex-wrap: wrap
+  top: 50%
+  margin-top: -165.5px
+  height: 331px
+  left: 50%
+  margin-left: -232.5px
+  width: 465px
+  background-color: #fff
+  z-index: 12
+  border: 1px solid #000
+  &-title
+   margin: 32px 0 0 0
+   color: $text-color
+   font-weight: 600
+   font-size: 2.1428rem
+   line-height: 35.22px
+   width: 100%
+   text-align: center
+   font-family: Raleway
+  &-form
+   margin-top: 4px
+   width: 326px
+   display: flex
+   justify-content: center
+   flex-wrap: wrap
+  &-input
+   margin-top: 24px
+   width: 326px
+   height: 46px
+   padding-left: 15px
+   font-family: RalewayBold
+   font-size: 1.0714rem
+   font-weight: 500
+   line-height: 17.61px
+   &::placeholder
+    color: $text-color
+    font-size: 1.0714rem
+    font-weight: 500
+    line-height: 17.61px
+    text-transform: uppercase
+    font-family: RalewayBold
+ &__button
+  &-wrapper
+   margin-top: 28px
+   margin-bottom: 32px
+ &__overlay
+  width: 100vw
+  height: 100vh
+  z-index: 11
+  background-color: rgba(0,0,0,.5)
+  display: none
+  position: fixed
+  top: 0
+  left: 0 
+.popup
+ &__callback
+  display: none
+  position: fixed
+  justify-content: center
+  flex-wrap: wrap
+  top: 50%
+  margin-top: -265.5px
+  height: 531px
+  left: 50%
+  margin-left: -332.5px
+  width: 665px
+  background-color: #fff
+  z-index: 12
+  border: 1px solid #000
+  padding-bottom: 50px
+  &-phone
+   margin-bottom: 30px
+  &-cross
+   visibility: hidden
+   margin-left: 15px
+   margin-top: 33px
+   width: 37px
+   height: 31px
+  &-access
+   display: none
+   position: fixed
+   justify-content: center
+   flex-wrap: wrap
+   top: 50%
+   margin-top: -140px
+   height: 280px
+   left: 50%
+   margin-left: -332.5px
+   width: 665px
+   background-color: #fff
+   z-index: 12
+   border: 1px solid #000
+   &-title
+    margin: 70px 0 0 0
+    color: $text-color
+    font-weight: 600
+    font-size: 2.1428rem
+    line-height: 35.22px
+    width: 100%
+    text-align: center
+    font-family: Raleway
+  &-title
+   margin: 32px 0 0 0
+   color: $text-color
+   font-weight: 600
+   font-size: 2.1428rem
+   line-height: 35.22px
+   width: 100%
+   text-align: center
+   font-family: Raleway
+  &-form
+   margin-top: 4px
+   width: 526px
+   display: flex
+   justify-content: center
+   flex-wrap: wrap
+  &-input
+   margin-top: 24px
+   width: 450px
+   height: 46px
+   padding-left: 15px
+   font-family: RalewayBold
+   font-size: 1.0714rem
+   font-weight: 500
+   line-height: 17.61px
+   &::placeholder
+    color: $text-color
+    font-size: 1.0714rem
+    font-weight: 500
+    line-height: 17.61px
+    text-transform: uppercase
+    font-family: RalewayBold
+  &-button-wrapper
+   display: flex
+   justify-content: space-between
+   width: 526px
+   align-items: center
+  &-calendar
+   display: none
+   position: fixed
+   top: 50%
+   margin-top: -265.5px
+   height: 531px
+   left: 50%
+   margin-left: -332.5px
+   width: 665px
+   justify-content: center
+   flex-wrap: wrap
+   background-color: #fff
+   border: 1px solid #000
+   z-index: 99
+  &-text
+   margin: 32px 0 0 0
+   color: $text-color
+   font-weight: 600
+   font-size: 1.0714rem
+   line-height: 17.61px
+   width: 100%
+   text-align: center
+   font-family: Raleway
+   vertical-align: middle
+ &__button
+  &-wrapper
+   margin-top: 28px
+   margin-bottom: 32px
+ &__answer
+  &_hidden
+   height: 90px
+   width: 300px
+@keyframes popupHiding
+ 0%
+  transform: scale(1)
+ 100%
+  transform: scale(0)
+@keyframes popupOverlayHiding
+ 0%
+  opacity: 1
+ 100%
+  opacity: 0
+@keyframes popupShowing
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1)
+@keyframes popupOverlayShowing
+ 0%
+  opacity: 0
+ 100%
+  opacity: 1 

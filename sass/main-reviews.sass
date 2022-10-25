@@ -1,0 +1,133 @@
+.reviews
+ position: relative
+ border-top: 1px solid $text-color
+ border-bottom: 1px solid $text-color
+ &::before
+  content: '10'
+  background: url('../img/main-reviews/bg-side.png') center no-repeat
+  background-size: cover
+  top: 0
+  left: 0
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  width: 60px
+  color: #fff
+  font-family: PostNoBillsJaffna
+  font-size: 2.857rem
+ &::after
+  content: ''
+  top: 0
+  right: 0
+  position: absolute
+  height: 100%
+  width: 60px
+  border-left: 2px solid $text-color
+ &__container
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  width: 1440px
+  margin: 0 auto
+  padding: 10vh 0 21.75vh 0
+ &__title
+  font-size: 2.8571rem
+  margin: 0
+  font-family: Raleway
+  line-height: 46.96px
+  font-weight: 600
+  color: $text-color
+  text-align: left
+  width: 100%
+ &__block
+  width: 1077px
+  height: 450px
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  background: url(../img/main-reviews/border.png) center no-repeat
+  background-size: 1077px 450px
+  margin-top: 49px
+  z-index: 10
+  background-color: white
+  &::after
+   display: block
+   content: url('../img/main-teachers/triangles.png')
+   position: absolute
+   bottom: -20px
+   left: 12px
+  &_mobile
+   display: none
+ &__image
+  &_mobile
+  &_hidden
+   display: none 
+   &-right
+    display: none
+    position: absolute
+    animation: .5s linear reviewsSliderRightHide
+    transform: translateX(-943px)
+   &-left
+    display: none
+    position: absolute
+    animation: .5s linear reviewsSliderLeftHide
+    transform: translateX(943px)
+  &_visible
+   display: block!important
+   &-right
+    display: block!important
+    animation: .5s linear reviewsSliderRightShow
+    position: absolute
+   &-left
+    display: block!important
+    animation: .5s linear reviewsSliderLeftShow
+    position: absolute
+@keyframes reviewsSliderRightShow
+ 0%
+  transform: translateX(943px)
+  clip: rect(0px, 0px, 327px, 0px)
+ 100%
+  transform: translateX(0px)
+  clip: rect(0px, 943px, 327px, 0px)
+
+@keyframes reviewsSliderRightHide
+ 0%
+  transform: translateX(0px)
+  clip: rect(0px, 943px, 327px, 0px)
+  display: block!important
+ 100%
+  display: block!important
+  transform: translateX(-943px)
+  clip: rect(0px, 943px, 327px, 943px)
+
+@keyframes reviewsSliderLeftShow
+ 0%
+  transform: translateX(-943px)
+  clip: rect(0px, 943px, 327px, 943px)
+ 100%
+  transform: translateX(0px)
+  clip: rect(0px, 943px, 327px, 0px)
+
+@keyframes reviewsSliderLeftHide
+ 0%
+  transform: translateX(0px)
+  clip: rect(0px, 943px, 327px, 0px)
+  display: block!important
+ 100%
+  display: block!important
+  transform: translateX(943px)
+  clip: rect(0px, 0px, 327px, 0px)
+
+@keyframes appearReviewsTitle
+ 0%
+  transform: translateX(-1000px)
+ 100%
+  transform: translateX(0px) 
+@keyframes appearReviewsBlock
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1) 

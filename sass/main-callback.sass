@@ -1,0 +1,145 @@
+.callback
+ position: relative
+ border-top: 1px solid $text-color
+ border-bottom: 1px solid $text-color
+ &::before
+  content: '11'
+  background: url('../img/main-callback/bg-side.png') center no-repeat
+  background-size: cover
+  top: 0
+  left: 0
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  width: 60px
+  color: #fff
+  font-family: PostNoBillsJaffna
+  font-size: 2.857rem
+ &::after
+  content: ''
+  top: 0
+  right: 0
+  position: absolute
+  height: 100%
+  width: 60px
+  border-left: 2px solid $text-color
+ &-cross
+  display: none
+  margin-left: 15px
+  margin-top: 33px
+  width: 37px
+  height: 31px
+ &__container
+  display: flex
+  justify-content: space-around
+  flex-wrap: wrap
+  width: 1440px
+  margin: 104px auto 104px auto
+ &__title
+  font-size: 2.8571rem
+  margin: 0
+  font-family: Raleway
+  line-height: 46.96px
+  font-weight: 600
+  color: $text-color
+  text-align: left
+  width: 100%
+  padding-left: 10px
+ &__form
+  width: 603px
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+ &__name
+  width: 281px
+  border-bottom: 1px solid #00011E
+  border-top: none
+  border-left: none
+  border-right: none
+  &::placeholder
+   color: #A1A1A1
+   line-height: 17.61px
+   font-size: 1.071rem
+   font-weight: 400
+   font-family: Raleway
+  &:focus-visible
+   border-top: none
+   border-left: none
+   border-right: none
+   outline: none
+ &__phone
+  width: 281px
+  border-bottom: 1px solid #00011E
+  border-top: none
+  border-left: none
+  border-right: none
+  &::placeholder
+   color: #A1A1A1
+   line-height: 17.61px
+   font-size: 1.071rem
+   font-weight: 400
+   font-family: Raleway
+  &:focus-visible
+   border-top: none
+   border-left: none
+   border-right: none
+   outline: none
+ &__comment
+  width: 603px
+  border-bottom: 1px solid #00011E
+  border-top: none
+  border-left: none
+  border-right: none
+  &:focus-visible
+   border-top: none
+   border-left: none
+   border-right: none
+   outline: none
+  &::placeholder
+   color: #A1A1A1
+   line-height: 17.61px
+   font-size: 1.071rem
+   font-weight: 400
+   font-family: Raleway
+ &__button
+  &-wrapper
+   margin-left: 363px
+   margin-top: 41px
+ &__block
+  width: 528px
+  margin-top: -46px
+  position: relative
+  &-border
+   width: 536px
+   height: 366px
+   background: url(../img/main-callback/border.png)
+   background-size: 536px 366px
+   position: absolute
+   bottom: 12px
+   left: 16px
+   &::after
+    content: url('../img/main-callback/triangles.png')
+    display: block
+    position: absolute
+    top: -19px
+    right: 2px
+    width: 290px
+    height: 34px
+
+@keyframes appearCallbackTitle
+ 0%
+  transform: translateX(-1000px)
+ 100%
+  transform: translateX(0px) 
+@keyframes appearCallbackForm
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1) 
+@keyframes appearCallbackBlock
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1) 

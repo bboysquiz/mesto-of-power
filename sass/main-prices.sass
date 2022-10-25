@@ -1,0 +1,146 @@
+.prices
+ position: relative
+ border-top: 1px solid $text-color
+ border-bottom: 1px solid $text-color
+ &::before
+  content: '8'
+  background: url('../img/main-prices/bg-side.png') center no-repeat
+  background-size: cover
+  top: 0
+  left: 0
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  width: 60px
+  color: #fff
+  font-family: PostNoBillsJaffna
+  font-size: 2.857rem
+ &::after
+  content: ''
+  top: 0
+  right: 0
+  position: absolute
+  height: 100%
+  width: 60px
+  border-left: 2px solid $text-color
+ &__container
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 1440px
+  margin: 0 auto
+  padding: 10vh 0 5.625vh 0
+ &__title
+  font-size: 2.8571rem
+  margin: 0
+  font-family: Raleway
+  line-height: 46.96px
+  font-weight: 600
+  color: $text-color
+  text-align: left
+  width: 100%
+ &__descr
+  &-list
+   width: 369px
+   height: 238px
+   margin-top: 31px
+   padding-top: 5px
+   margin-left: -17px
+   display: flex
+   flex-wrap: wrap
+   &-item
+    width: 100%
+    font-weight: 400
+    font-size: 1.428rem
+    color: $text-color
+    font-family: Raleway
+    line-height: 23.44px
+    list-style-type: none
+    position: relative
+ &__list
+  width: 68px
+  height: 238px
+  display: flex
+  flex-wrap: wrap
+  justify-content: left
+  padding-left: 40px
+  margin-top: 31px
+  &-item
+   width: 100%
+   list-style-type: none
+   position: relative
+   &::before
+    content: url('../img/main-prices/triangle.png')
+    position: absolute
+    display: block
+    top: 8.75px
+    left: -40px
+    padding-top: 3px
+ &__value
+  font-weight: 400
+  font-size: 2.142rem
+  color: $text-color
+  font-family: Raleway
+  line-height: 35.16px
+ &__block
+  width: 556px
+  height: 238px
+  display: flex
+  justify-content: left
+  &-info
+   width: 679px
+   margin-top: 243px
+   margin-right: 49px
+   display: flex
+   flex-wrap: wrap
+   justify-content: center
+   padding: 15px 0
+   background: url('../img/main-prices/border.png')
+   background-size: 679px 287px
+ &__text
+  padding: 0 46px
+  margin: 20px 0
+  font-weight: 400
+  font-size: 1.428rem
+  color: $text-color
+  font-family: Raleway
+  line-height: 23.44px
+ &__button
+  padding: 0 24px 0 24px!important
+  &-wrapper
+   position: relative
+   width: 240px
+   display: flex
+   justify-content: flex-end
+   padding-right: 60px
+   &-block
+    display: flex
+    justify-content: space-between
+    width: 1440px
+    align-items: center
+    margin-top: 36px
+
+
+@keyframes appearPricesTitle
+ 0%
+  transform: translateX(-1000px)
+ 100%
+  transform: translateX(0px) 
+@keyframes appearPricesBlock
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1) 
+@keyframes appearPricesBlockInfo
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1) 
+@keyframes appearPricesWrapper
+ 0%
+  transform: translateX(-1000px)
+ 100%
+  transform: translateX(0px) 
+    

@@ -1,0 +1,137 @@
+.features
+ position: relative
+ border-top: 1px solid $text-color
+ border-bottom: 1px solid $text-color
+ &::before
+  content: '5'
+  background: url('../img/main-features/bg-side.png') center no-repeat
+  background-size: cover
+  top: 0
+  left: 0
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  width: 60px
+  color: #fff
+  font-family: PostNoBillsJaffna
+  font-size: 2.857rem
+ &::after
+  content: ''
+  top: 0
+  right: 0
+  position: absolute
+  height: 100%
+  width: 60px
+  border-left: 2px solid $text-color
+ &__container
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  width: 1440px
+  margin: 0 auto
+  padding: 10vh 0 8.5vh 0
+ &__title
+  font-size: 2.8571rem
+  font-family: Raleway
+  line-height: 46.96px
+  font-weight: 600
+  color: $text-color
+  text-align: left
+  width: 100%
+ &__block
+  width: 400px
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  margin-top: 5vh
+  &-1
+   background: url(../img/main-features/1.png) 70% center no-repeat
+   background-size: 119px 181px
+   z-index: 10
+   background-color: #fff
+  &-2
+   background: url(../img/main-features/2.png) 70% center no-repeat
+   background-size: 119px 181px
+   z-index: 9
+   background-color: #fff
+  &-3
+   background: url(../img/main-features/3.png) 70% center no-repeat
+   background-size: 119px 181px
+   z-index: 8
+   background-color: #fff
+  &-4
+   background: url(../img/main-features/4.png) 70% center no-repeat
+   background-size: 119px 181px
+   z-index: 7
+   background-color: #fff
+  &-5
+   background: url(../img/main-features/5.png) 70% center no-repeat
+   background-size: 119px 181px
+   z-index: 6
+   background-color: #fff
+  &-6
+   background: url(../img/main-features/6.png) 70% center no-repeat
+   background-size: 119px 181px
+   z-index: 5
+   background-color: #fff
+  &-list
+   display: flex
+   flex-wrap: wrap
+   width: 1440px
+   justify-content: space-between
+ &__title
+  text-align: left
+  width: 100%
+  color: $text-color
+  line-height: 35.22px
+  font-size: 2.1428rem
+  font-weight: 600
+  font-family: Raleway
+ &__descr
+  font-family: Raleway
+  text-align: left
+  color: $text-color
+  width: 100%
+  line-height: 20px
+  font-weight: 400
+  font-size: 1.0714rem
+  margin-top: 30px
+
+@keyframes appearFeaturesTitle
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1)
+
+@keyframes appearFeaturesBlock1
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1)
+@keyframes appearFeaturesBlock2
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1) 
+@keyframes appearFeaturesBlock3
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1)
+@keyframes appearFeaturesBlock4
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1)
+@keyframes appearFeaturesBlock5
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1)
+@keyframes appearFeaturesBlock6
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1)

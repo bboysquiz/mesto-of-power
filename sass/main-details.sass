@@ -1,0 +1,146 @@
+.details
+ position: relative
+ border-top: 1px solid $text-color
+ border-bottom: 1px solid $text-color
+ &::before
+  content: '4'
+  background: url('../img/main-details/bg-side.png') center no-repeat
+  background-size: cover
+  top: 0
+  left: 0
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  width: 60px
+  color: #fff
+  font-family: PostNoBillsJaffna
+  font-size: 2.857rem
+ &::after
+  content: ''
+  top: 0
+  right: 0
+  position: absolute
+  height: 100%
+  width: 60px
+  border-left: 2px solid $text-color
+ &__container
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  width: 1440px
+  margin: 0 auto
+  padding: 10vh 0 5.625vh 0
+ &__title
+  width: 100%
+  font-weight: 400
+  font-size: 2.142rem
+  line-height: 35.22px
+  font-family: Raleway
+  color: $text-color 
+  text-align: left
+  padding-right: 380px
+ &__block
+  width: 752px
+  margin-top: 55px
+  position: relative
+  &::before
+   content: url('../img/main-details/triangles.png')
+   display: block
+   bottom: -20px
+   right: 0
+   position: absolute
+   width: 135px
+   height: 28.33px
+ &__border
+  background: url('../img/main-details/border.png') no-repeat center
+  background-size: cover
+  padding: 10px 0
+  width: 752px
+  display: flex
+  justify-content: left
+ &__age
+  font-weight: 700
+  font-size: 2.142rem
+  line-height: 35.22px
+  font-family: Raleway
+  color: $text-color
+  position: relative
+  margin-left: 79px
+  &::before
+   content: url('../img/main-details/triangle.png')
+   display: block
+   position: absolute
+   top: 0
+   left: 0
+   width: 27px
+   height: 27px
+   margin-left: -37px
+ &__text
+  font-weight: 400
+  font-family: Raleway
+  font-size: 1.0714rem
+  line-height: 30px
+  color: $text-color
+  text-align: left
+  &-block
+   width: 441px
+   display: flex
+   justify-content: left
+   flex-wrap: wrap
+   margin-left: 34px
+ &__note
+  width: 100%
+  font-weight: 400
+  font-size: 2.142rem
+  line-height: 35.22px
+  font-family: Raleway
+  color: $text-color
+  text-align: right
+  margin-top: 83px
+  padding-left: 440px
+  &_bold
+   font-weght: 900
+   font-family: RalewayBold
+   text-transform: uppercase
+ &__button
+  padding: 0 24px 0 24px!important
+  &-wrapper
+   position: relative
+   width: 240px
+   display: flex
+   justify-content: flex-end
+   padding-right: 60px
+   &-block
+    display: flex
+    justify-content: space-between
+    width: 1440px
+    align-items: center
+    margin-bottom: 36px
+
+
+@keyframes appearDetailsTitle
+ 0%
+  transform: translateX(-1000px)
+ 100%
+  transform: translateX(0px) 
+
+@keyframes appearDetailsBlock
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1)
+
+@keyframes appearDetailsNote
+ 0%
+  transform: translateX(1000px)
+ 100%
+  transform: translateX(0px) 
+
+@keyframes appearDetailsWrapper
+ 0%
+  transform: translateX(-1000px)
+ 100%
+  transform: translateX(0px) 
+    

@@ -1,0 +1,230 @@
+.teachers
+ position: relative
+ border-top: 1px solid $text-color
+ border-bottom: 1px solid $text-color
+ &::before
+  content: '7'
+  background: url('../img/main-teachers/bg-side.png') center no-repeat
+  background-size: cover
+  top: 0
+  left: 0
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  width: 60px
+  color: #fff
+  font-family: PostNoBillsJaffna
+  font-size: 2.857rem
+ &::after
+  content: ''
+  top: 0
+  right: 0
+  position: absolute
+  height: 100%
+  width: 60px
+  border-left: 2px solid $text-color
+ &__container
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 1440px
+  margin: 0 auto
+  padding: 10vh 0 5.625vh 0
+ &__title
+  font-size: 2.8571rem
+  font-family: Raleway
+  line-height: 46.96px
+  font-weight: 600
+  color: $text-color
+  text-align: left
+  width: 100%
+  margin: 0
+ &__block
+  width: 810px
+  display: flex
+  margin: 7px auto 0 auto
+  padding-left: 405px
+  &-photo
+   display: flex
+   justify-content: center
+   align-items: center
+   background: url(../img/main-teachers/border.png) center no-repeat
+   background-size: 392px 251px
+   width: 394px
+   height: 251px
+  &-info
+   width: 704px
+   height: 442px
+   position: relative
+   display: flex
+   justify-content: center
+   align-items: center
+   background: url(../img/main-teachers/border.png) center no-repeat
+   background-size: 704px 442px
+   margin-left: -286px
+   margin-top: 160px
+   z-index: 10
+   background-color: white
+   &::after
+    display: block
+    content: url('../img/main-teachers/triangles.png')
+    position: absolute
+    bottom: -20px
+    right: 12px
+ &__image
+  &_hidden
+   display: none
+   &-right
+    display: none
+    position: absolute
+    animation: .5s linear sliderRightHide
+    transform: translateX(-350px)
+   &-left
+    display: none
+    position: absolute
+    animation: .5s linear sliderLeftHide
+    transform: translateX(350px)
+  &_visible
+   display: block!important
+   &-right
+    display: block!important
+    animation: .5s linear sliderRightShow
+    position: absolute
+   &-left
+    display: block!important
+    animation: .5s linear sliderLeftShow
+    position: absolute
+  &-wrapper
+   background: url(../img/main-teachers/border.png) center no-repeat
+   width: 350px
+   height: 210px
+   z-index: 15
+ &__block
+  &-ss
+   display: flex
+   flex-wrap: wrap
+   width: 18.33px
+   padding-top: 388px
+ &__icon
+  &:hover
+   transform: scale(1.2)
+  &:active
+   transform: translateY(4px)
+ &__info
+  justify-content: center
+  flex-wrap: wrap
+  display: none!important
+  &_hidden-right
+   display: none!important
+  &_hidden-left
+   display: none!important
+  &_visible-right
+   display: flex!important
+  &_visible-left
+   display: flex!important
+  &-name
+   font-family: Roboto
+   font-weight: 400
+   font-size: 2.1428rem
+   line-height: 35.22px
+   color: $text-color
+   width: 100%
+   margin-top: 70px
+   padding-left: 14px
+   text-align: left
+   margin-bottom: 0
+  &-prof
+   font-family: Roboto
+   font-weight: 400
+   font-size: 1.0714rem
+   line-height: 17.58px
+   color: $text-color
+   width: 100%
+   text-align: left
+   padding-left: 15px
+   margin-top: 25px
+   margin-bottom: 0
+  &-experience
+   font-family: Roboto
+   font-weight: 400
+   font-size: 1.0714rem
+   line-height: 17.58px
+   padding-left: 15px
+   color: $text-color
+   width: 100%
+   text-align: left
+   margin-top: 15px
+   margin-bottom: 0
+   &-teacher
+    font-family: Roboto
+    font-weight: 400
+    font-size: 1.0714rem
+    line-height: 17.58px
+    padding-left: 15px
+    color: $text-color
+    width: 100%
+    text-align: left
+    margin-top: 15px
+    margin-bottom: 0
+  &-text
+   font-family: Roboto
+   font-weight: 400
+   font-size: 0.8571rem
+   line-height: 20px
+   color: $text-color
+   width: 100%
+   text-align: left
+   padding-left: 15px
+   margin-top: 30px
+   margin-bottom: 0
+   padding: 0 15px 0 15px
+   
+@keyframes sliderRightShow
+ 0%
+  transform: translateX(350px)
+  clip: rect(0px, 0px, 210px, 0px)
+ 100%
+  transform: translateX(0px)
+  clip: rect(0px, 350px, 210px, 0px)
+
+@keyframes sliderRightHide
+ 0%
+  transform: translateX(0px)
+  clip: rect(0px, 350px, 210px, 0px)
+  display: block!important
+ 100%
+  display: block!important
+  transform: translateX(-350px)
+  clip: rect(0px, 350px, 210px, 350px)
+
+@keyframes sliderLeftShow
+ 0%
+  transform: translateX(-350px)
+  clip: rect(0px, 350px, 210px, 350px)
+ 100%
+  transform: translateX(0px)
+  clip: rect(0px, 350px, 210px, 0px)
+
+@keyframes sliderLeftHide
+ 0%
+  transform: translateX(0px)
+  clip: rect(0px, 350px, 210px, 0px)
+  display: block!important
+ 100%
+  display: block!important
+  transform: translateX(350px)
+  clip: rect(0px, 0px, 210px, 0px)
+
+@keyframes appearTeachersTitle
+ 0%
+  transform: translateX(-1000px)
+ 100%
+  transform: translateX(0px) 
+@keyframes appearTeachersBlock
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1) 
+    

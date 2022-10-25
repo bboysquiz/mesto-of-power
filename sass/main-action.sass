@@ -1,0 +1,117 @@
+.action
+ position: relative
+ border-top: 1px solid $text-color
+ border-bottom: 1px solid $text-color
+ &::before
+  content: '2'
+  background: url('../img/main-action/bg-side.png') center no-repeat
+  background-size: cover
+  top: 0
+  left: 0
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  width: 60px
+  color: #fff
+  font-family: PostNoBillsJaffna
+  font-size: 2.857rem
+ &::after
+  content: ''
+  top: 0
+  right: 0
+  position: absolute
+  height: 100%
+  width: 60px
+  border-left: 2px solid $text-color
+ &__container
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
+  width: 1440px
+  margin: 0 auto
+  padding: 10vh 0 10vh 0
+ &__caption
+  width: 100%
+  text-align: left
+  font-family: RalewayBold
+  font-weight: 700
+  color: $text-color
+  font-size: 2.857rem
+  margin: 0
+  &-block
+   display: flex
+   justify-content: left
+   flex-wrap: wrap
+   margin-right: 109px
+   width: 1320px
+ &__subtitle
+  font-weight: 600
+  font-family: Raleway
+  font-size: 1.214rem
+  color: $text-color 
+  margin-top: 26px
+ &__block
+  width: 263px
+  height: 280px
+  display: flex
+  justify-content: center
+  align-items: center
+  outline: 1px solid #000
+  &:nth-child(3) .action__descr
+    width: 160px
+  &-list
+   display: flex
+   flex-wrap: wrap
+   width: 1320px
+   margin-top: 67px
+  &_after-down
+   position: relative
+   &:after
+    position: absolute
+    margin-left: -23.5px
+    bottom: -16px
+    left: 50%
+    content: url('../img/main-action/triangle-down.png')
+    width: 45px
+    height: 32px
+    display: block
+    z-index: 1
+  &_after-up
+   position: relative
+   &:after
+    position: absolute
+    bottom: -16px
+    left: 50%
+    margin-left: -23.5px
+    content: url('../img/main-action/triangle-up.png')
+    width: 45px
+    height: 32px
+    display: block
+   &_none-cross
+    &::after
+     display: none
+ &__descr
+  font-weight: 600
+  font-family: RalewayLight
+  font-size: 1.0714rem
+  color: $text-color
+  text-align: center
+  width: 205px
+  &-logo
+   font-weight: 900
+   font-family: RalewayBold
+
+@keyframes appearActionBlockList
+ 0%
+  transform: scale(0)
+ 100%
+  transform: scale(1)
+
+@keyframes appearActionCaption
+ 0%
+  margin-left: -2000px
+ 100%
+  margin-left: 0
+    

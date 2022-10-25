@@ -1,0 +1,169 @@
+.contacts
+ position: relative
+ border-top: 1px solid $text-color
+ border-bottom: 1px solid $text-color
+ &::before
+  content: '12'
+  background: url('../img/main-contacts/bg-side.png') center no-repeat
+  background-size: cover
+  top: 0
+  left: 0
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+  width: 60px
+  color: #fff
+  font-family: PostNoBillsJaffna
+  font-size: 2.857rem
+ &::after
+  content: ''
+  top: 0
+  right: 0
+  position: absolute
+  height: 100%
+  width: 60px
+  border-left: 2px solid $text-color
+ &__container
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  width: 1440px
+  margin: 0 auto
+  padding: 80px 0 105px 0
+ &__title
+  font-size: 2.8571rem
+  margin: 0
+  font-family: Raleway
+  line-height: 46.96px
+  font-weight: 600
+  color: $text-color
+  text-align: left
+  width: 100%
+ &__block
+  width: 366px
+  display: flex
+  flex-wrap: wrap
+  justify-content: flex-start
+ &__adres
+  color: $text-color
+  font-family: Raleway
+  font-weight: 400
+  font-size: 1.428rem
+  line-height: 23.48px
+  margin-top: 22px
+  margin-bottom: 0
+  width: 100%
+  &-title
+   color: $text-color
+   font-family: Raleway
+   font-weight: 700
+   font-size: 1.785rem
+   line-height: 29.35px
+   margin-top: 52px
+   margin-bottom: 0
+   width: 100%
+ &__schedule
+  color: $text-color
+  font-family: Raleway
+  font-weight: 400
+  font-size: 1.428rem
+  line-height: 23.48px
+  margin-top: 18px
+  margin-bottom: 0
+  width: 100%
+  &-point
+   margin: 0
+  &-title
+   color: $text-color
+   font-family: Raleway
+   font-weight: 700
+   font-size: 1.785rem
+   line-height: 29.35px
+   margin-top: 52px
+   margin-bottom: 0
+   width: 100%
+ &__callback
+  &-title
+   color: $text-color
+   font-family: Raleway
+   font-weight: 700
+   font-size: 1.785rem
+   line-height: 29.35px
+   margin-top: 52px
+   margin-bottom: 0
+   width: 100%
+  &-number
+   color: $text-color
+   font-family: Raleway
+   font-weight: 400
+   font-size: 1.071rem
+   line-height: 23.48px
+   margin-top: 18px
+   margin-bottom: 0
+   width: 100%
+  &-email
+   color: $text-color
+   font-family: Raleway
+   font-weight: 400
+   font-size: 1.071rem
+   line-height: 23.48px
+   margin-top: 15px
+   margin-bottom: 0
+   width: 100%
+ &__icon
+  width: 18.33px
+  height: 18.33px
+  &:hover
+   transform: scale(1.2)
+  &:active
+   transform: translateY(4px)
+  &s-block
+   display: flex
+   justify-content: space-between
+   width: 220px
+   margin-top: 22.83px
+ &__map
+  height: 506px
+  &-wrapper
+   width: 974px
+   height: 506px
+   border: 2px solid $text-color
+.marker-wrapper
+ width: 35vw
+ height: 35vh
+ margin-left: -17.5vw
+ margin-top: -17.5vh
+ z-index: 99999
+.marker
+ display: block
+ width: 100px
+ height: 100px
+ position: absolute
+ top: 50% 
+ left: 50%
+ margin-left: -50px
+ margin-top: -50px
+ &-text
+  display: block
+  width: 100px
+  height: 100px
+  position: absolute
+  top: 50% 
+  left: 0
+  margin-left: -150px
+  margin-top: -50px
+
+@keyframes marker
+ 0%
+  margin-top: -300px
+ 100%
+  margin-top: -40px
+@keyframes marker-text
+ 0%
+  opacity: 0
+ 100%
+  opacity: 1
+
+    
